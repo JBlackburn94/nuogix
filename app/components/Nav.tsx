@@ -18,25 +18,43 @@ export default function Nav() {
         scrub: true,
       },
     });
+
+    gsap.to("#navLogo", {
+      opacity: 1,
+      duration: 0.5,
+      ease: "power2.inOut",
+    });
+
+    gsap.to("#navLink", {
+      opacity: 1,
+      duration: 0.6,
+      ease: "power2.inOut",
+    });
   });
 
   return (
     <header className="fixed w-full z-50">
       <nav
         id="nav"
-        className="flex justify-between items-center h-[100px] w-full px-[25px] md:px-[50px]"
+        className="flex justify-between items-center h-[100px] overflow-y-hidden w-full px-[25px] md:px-[50px]"
       >
         <div>
           <Link href={"/"} className="select-none">
             <Image
+              id="navLogo"
               src={logo}
               alt="Nuogix Logo"
-              className="hover:scale-105 transition-all duration-200 ease-in-out"
+              className="opacity-0 hover:scale-105 transition-all duration-200 ease-in-out"
+              priority
             />
           </Link>
         </div>
         <div className="text-white text-base">
-          <Link href={"#sign-up"} className="hover:underline">
+          <Link
+            id="navLink"
+            href={"#sign-up"}
+            className="opacity-0 hover:underline"
+          >
             Sign Up
           </Link>
         </div>
