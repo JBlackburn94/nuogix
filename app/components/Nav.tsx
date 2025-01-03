@@ -50,13 +50,13 @@ export default function Nav() {
           </Link>
         </div>
         <div className="text-white text-base">
-          <Link
+          {/* <Link
             id="navLink"
             href={"#sign-up"}
             className="opacity-0 hover:underline"
           >
             Sign Up
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>
