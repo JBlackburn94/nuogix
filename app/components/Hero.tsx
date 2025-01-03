@@ -36,11 +36,11 @@ export default function Hero() {
           <Image src={hero} alt="Nuogix logo" className="scale-125" />
           <p>Coming Soon.</p>
         </div>
-        <div className="flex justify-center items-center text-white font-light row-span-1 col-span-1 m-5">
+        {/* <div className="flex justify-center items-center text-white font-light row-span-1 col-span-1 m-5">
           <Link href="#gallery" className="hover:underline">
             Scroll down to find out more.
           </Link>
-        </div>
+        </div> */}
       </div>
       <video
         autoPlay
